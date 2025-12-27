@@ -1,50 +1,25 @@
-\# Windows Preventive Maintenance Script
+# Windows Preventive Maintenance Script
 
+PowerShell script for basic preventive maintenance on Windows systems.
 
+## Features
+- Disk cleanup
+- Temporary files removal
+- System integrity verification
+- Network reset
+- Application updates using winget
 
-Script profesional de mantenimiento preventivo para Windows 10 y Windows 11,
+## Requirements
+- Windows 10 / 11
+- PowerShell 5.1 or higher
+- Administrator privileges
 
-diseñado para técnicos de soporte, outsourcing IT y administradores junior.
-
-
-
-\## 🔧 Funcionalidades
-
-\- Limpieza avanzada de disco
-
-\- Eliminación segura de archivos temporales
-
-\- Desactivación de hibernación (libera espacio)
-
-\- Verificación de integridad del sistema (SFC / DISM)
-
-\- Exportación de tareas programadas
-
-\- Actualización automática de aplicaciones con WinGet
-
-\- Registro de acciones en archivo LOG
-
-
-
-\## ⚙️ Requisitos
-
-\- Windows 10 / 11
-
-\- PowerShell 5.1 o superior
-
-\- Ejecución como Administrador
-
-\- WinGet instalado (incluido por defecto en Win11)
-
-
-
-\## 🚀 Uso
-
-1\. Clona el repositorio:
-
-```bash
-
-git clone https://github.com/tuusuario/windows-preventive-maintenance.git
-
+## Usage
+1. Backup important data
+2. Run PowerShell as Administrator
+3. Execute:
+   ```powershell
+   Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+   .\Windows-Preventive-Maintenance.ps1
 
 
