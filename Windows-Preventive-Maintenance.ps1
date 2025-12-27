@@ -4,6 +4,32 @@
 # Author: PC HELP
 # ============================================
 
+<#
+.SYNOPSIS
+    Preventive maintenance script for Windows systems.
+
+.DESCRIPTION
+    Performs basic preventive maintenance tasks:
+    - Disk cleanup
+    - System file verification
+    - Network reset
+    - Application update (winget)
+    - Temporary files cleanup
+
+.AUTHOR
+    PC HELP
+
+.VERSION
+    1.0.0
+
+.LICENSE
+    MIT License
+
+.WARNING
+    Run as Administrator.
+    Always ensure backups are available before execution.
+#>
+
 # Verificar ejecución como administrador
 if (-not ([Security.Principal.WindowsPrincipal] `
     [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(`
